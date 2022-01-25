@@ -3,10 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hello Thymeleaf</title>
+	
+	<!-- cssファイルを読み込む -->
 	<link th:href = "@{/css/stylesheet.css}" rel = "stylesheet">
 </head>
 <body>
 	<h1>Hello World!!</h1>
+	
+	<!-- messageの値とnowの値を受け取る -->
 	<p th:text = "${message}"></p>
 	<p th:text = "${now}"></p>
 </body>
